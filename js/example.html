@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html lang=”pt-br”>
+    <header>
+        <meta charset=”UTF-8”>
+        <title>Example</title>
+        <style type="text/css">
+            .hidden {
+                display: none;
+            }
+            .hidden ul{
+                list-style: none;
+            }
+            .hidden ul input {
+                position: absolute;
+                opacity: 0;
+            }
+            input {
+                display: block;
+                width: 70%;
+            }
+        </style>
+    </header>
+    <body>
+        <input type="text" name="nome" id="nome"  maxlength="100"/><br>
+        <button type="button" id="botao">Animar</button>
+        <div id="mo" class="hidden">
+            <ul>
+                <input type="radio"><li>Sem efeitos</li>
+                <input type="radio"><li>Tudo maiúscula</li>
+                <input type="radio"><li>Tudo minúscula</li>
+             <ul>
+        </div>
+        <script>
+            function exibe_resultado() {
+                document.getElementById('mo').style.display = 'block';
+                console.log(n1.value);
+                n1.value = "Meu ovo tá coçando";
+            }
+
+            var n1 = document.getElementById('nome');
+            var botao = document.getElementById('botao');
+            botao.onclick = exibe_resultado;
+        </script>
+    </body>
+</html>
